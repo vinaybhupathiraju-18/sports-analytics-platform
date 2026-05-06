@@ -1,0 +1,31 @@
+DTYPE_MAP = {
+    'game_id':              'string',
+    'play_id':              'Int64',
+    'home_team':            'string',
+    'away_team':            'string',
+    'posteam':              'string',
+    'defteam':              'string',
+    'play_type':            'string',
+    'down':                 'Int8',
+    'ydstogo':              'Int16',
+    'yards_gained':         'Int16',
+    'week':                 'Int8',
+    'season_type':          'string',
+    'passer_player_id':     'string',
+    'passer_player_name':   'string',
+    'receiver_player_id':   'string',
+    'receiver_player_name': 'string',
+    'rusher_player_id':     'string',
+    'rusher_player_name':   'string',
+    'epa':                  'float32',
+    'wp':                   'float32',
+    'cpoe':                 'float32',
+    'air_yards':            'Int16',
+    'yards_after_catch':    'Int16',
+    'pass_length':          'string',
+    'pass_location':        'string',
+    'score_differential':   'Int16',
+}
+
+DATE_COLS = ['game_date']
+KEEP_COLS = list(DTYPE_MAP.keys()) + DATE_COLS
